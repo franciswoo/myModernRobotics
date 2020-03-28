@@ -1,4 +1,4 @@
-function m = vector2SkewMatrix(v)
+function m = vector2Skew(v)
 %This functino transfer vector to a
 %skew-symmeric matrix
     m = [  0    -v(3)  v(2);
