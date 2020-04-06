@@ -3,4 +3,4 @@ function m = AdjointT(R, p)
 % R - Rotation Matrix(Using RotAxis funtion)
 % p - translation vector
  m = [R zeros(3);
-     vector2SkewMatrix(p)*R R];
+     vector2Skew(p)*R R];
