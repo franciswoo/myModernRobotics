@@ -1,4 +1,4 @@
-function J = jacobianS(T, S)
+function J = jacobianSpace(T, S)
 % This function represent the Space Jacobian
 % T - T should content Rotation(R) and translation(p) information
 % S - S content w and v
