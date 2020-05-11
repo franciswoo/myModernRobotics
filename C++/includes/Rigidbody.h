@@ -1,7 +1,7 @@
 #ifndef RIGIBODY_H
 #define RIGIBODY_H
 
-#include "screw.h"
+#include "Screw.h"
 
 class Rigidbody : public Screw
 {
@@ -9,6 +9,8 @@ private:
     Eigen::Matrix3d ineria_;
     Eigen::Matrix3d pose_; //rotation matrix of posture
     Eigen::Vector3d trans_; //translation vector
+    Eigen::MatrixXd jacobianBody_;
+    Eigen::MatrixXd jacobianSpace_;
 public:
     Rigidbody();
     ~Rigidbody();
